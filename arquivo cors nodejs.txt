@@ -1,0 +1,39 @@
+criar dentro de config
+
+cors.js
+
+
+module.exports = function(req,res,next){
+
+   res.header('Access-Control-Allow-Origin','*')
+   res.header('Access-Control-Allow-Methods','GET, POST, OPTIONS, PUT, PATCH, DELETE')
+   res.header('Access-Control-Allow-Headers','Origin, X-Requested-With, Content-Type, Accept')
+   next()
+}
+
+
+
+
+arquivo server.js
+
+importar o cors logo abaixao do bodyparser json
+
+const allowCors = require('./cors');
+
+
+server.use(allowCors);
+
+
+
+
+
+pm2 executando na aplicação nodejs backend
+
+instale a aplicação com npm i pm2 -g  
+
+para rodar global pm2 monit e ter o monitor fazendo verificação do uso da aplicação
+
+pm2 monit
+
+pm2 status
+

@@ -1,0 +1,47 @@
+
+node app.js
+
+npm run start
+
+npm run nodemon
+
+
+
+
+npm init -y
+
+npm install express --save
+//servidor
+
+npm install body-parser --save
+//url requisições
+
+pasta src
+
+criar index.js app.js server.js qualquer um
+
+
+
+depois de criar o src/index.js
+
+
+
+criar  pasta database
+
+arquivo index.js
+
+npm install mongoose --save
+
+
+criar pasta model e classe model
+
+
+
+CRIAR PASTA CONTROLER COMO MVC só não tem a view
+
+pasta controllers dentro de src
+
+
+addicionar 
+
+npm install bcryptjs --save
